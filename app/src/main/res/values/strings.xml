@@ -4,7 +4,6 @@
     <string name="product">Product</string>
     <string name="empty_product_name">Product name must have a value.</string>
     <string name="product_successfully_added">Product successfully added.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete">Delete</string>
