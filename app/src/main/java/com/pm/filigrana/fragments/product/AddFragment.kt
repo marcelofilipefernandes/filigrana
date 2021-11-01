@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.pm.filigrana.R
 import com.pm.filigrana.data.entities.Product
 import com.pm.filigrana.data.viewmodel.ProductViewModel
+import com.pm.filigrana.utils.Utils.Companion.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_add.*
 
 class AddFragment : Fragment() {
@@ -35,7 +36,7 @@ class AddFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //hideKeyboard()
+        hideKeyboard()
 
         if (item.itemId == R.id.menu_add) {
             addProduct()
@@ -45,8 +46,7 @@ class AddFragment : Fragment() {
     }
 
     private fun addProduct() {
-
-        if (isValid()) {
+        if (!isValid()) {
             return Toast.makeText(
                 requireContext(),
                 getString(R.string.empty_product_name),
@@ -68,6 +68,6 @@ class AddFragment : Fragment() {
     }
 
     private fun isValid() : Boolean {
-        return TextUtils.isEmpty(productName.text.toString())
+        return !TextUtils.isEmpty(productName.text.toString())
     }
 }

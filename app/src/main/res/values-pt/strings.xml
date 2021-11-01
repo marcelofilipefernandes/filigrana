@@ -5,4 +5,10 @@
     <string name="product">Artigo</string>
     <string name="empty_product_name">Nome do artigo tem que estar preenchido.</string>
     <string name="product_successfully_added">Artigo inserido com sucesso!</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="delete">Eliminar</string>
+    <string name="question_delete">Tem a certeza que pretende eliminar?</string>
+    <string name="product_successfully_updated">Artigo atualizado com sucesso!</string>
+    <string name="product_successfully_deleted">Artigo eliminado com sucesso!</string>
 </resources>

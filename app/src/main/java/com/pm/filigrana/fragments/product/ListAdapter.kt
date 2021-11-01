@@ -31,10 +31,10 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
             holder.itemView.rowLayout.setBackgroundColor(Color.parseColor("#b8a9c9"))
         }
 
-        /*holder.itemView.rowLayout.setOnClickListener {
+        holder.itemView.rowLayout.setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
             holder.itemView.findNavController().navigate(action)
-        }*/
+        }
     }
 
     override fun getItemCount(): Int {
