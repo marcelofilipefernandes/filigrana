@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Filigrana</string>
     <string name="settings">Definições</string>
+    <string name="product">Artigo</string>
+    <string name="empty_product_name">Nome do artigo tem que estar preenchido.</string>
+    <string name="product_successfully_added">Artigo inserido com sucesso!</string>
 </resources>

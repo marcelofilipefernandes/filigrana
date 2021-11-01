@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Filigrana</string>
     <string name="settings">Settings</string>
+    <string name="product">Product</string>
+    <string name="empty_product_name">Product name must have a value.</string>
+    <string name="product_successfully_added">Product successfully added.</string>
 </resources>
