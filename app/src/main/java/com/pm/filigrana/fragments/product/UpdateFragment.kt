@@ -64,7 +64,7 @@ class UpdateFragment : Fragment() {
                 Toast.LENGTH_LONG
             ).show()
         }
-        val product = Product(args.currentProduct.id, updateProductName.text.toString())
+        val product = Product(args.currentProduct.id, updateProductName.text.toString(), "")
 
         mProductViewModel.updateProduct(product)
 

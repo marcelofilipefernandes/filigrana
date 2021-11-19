@@ -54,7 +54,7 @@ class AddFragment : Fragment() {
             ).show()
         }
 
-        val product = Product(0, productName.text.toString())
+        val product = Product(0, productName.text.toString(), "")
 
         mProductViewModel.addProduct(product)
 

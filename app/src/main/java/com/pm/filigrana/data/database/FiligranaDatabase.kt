@@ -1,13 +1,17 @@
 package com.pm.filigrana.data.database
 
 import android.content.Context
+import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pm.filigrana.data.dao.ProductDao
 import com.pm.filigrana.data.entities.Product
 
-@Database(entities = [Product :: class], version = 1, exportSchema = false)
+@Database(entities = [Product :: class],
+    version = 2,
+    exportSchema = true,
+    autoMigrations = [AutoMigration (from = 1, to = 2)])
 abstract class FiligranaDatabase : RoomDatabase() {
 
     abstract fun productDao() : ProductDao
